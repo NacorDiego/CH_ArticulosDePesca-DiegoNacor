@@ -46,10 +46,10 @@
         </nav>
     </header>
     
-    <main class="container-fluid">
+    <main>
         <!-- SECCIÓN DE PORTADA -->
-        <article class="row portada">
-            <div id="carouselExampleIndicators" class="carousel slide p-0" data-bs-ride="carousel">
+        <article class="container-fluid portada p-0">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -78,54 +78,52 @@
         </article>
     
         <!-- SECCIÓN DE ARTICULOS QUE VENDEMOS-->
-        <article class="row mercaderia pt-5 bg-dark">
-            <div class="mercaderia__contenedor">
-                <div class="mercaderia__titulos text-light text-center">
-                    <!-- TITULO Y SUBTITULO -->
-                    <h1 class="titulo mercaderia__h1">ARTICULOS DE PESCA Y CAMPING</h1>
-                    <h3 class="titulo mercaderia__h3">Conocé lo que vendemos</h3>
-                </div>
-                
-                <!-- ICONOS DE CATEGORÍAS LINKEABLES-->
-                <ul class="mercaderia__lista list-unstyled mt-5">
-                    <li class="mercaderia__itemLista">
-                        <div class="mercaderia__contenedorItem d-flex justify-content-center align-items-center">
-                            <!-- Categoría PESCA -->
-                            <img src="./imagenes/pesca.svg" alt="seccion pesca" class="mercaderia__iconos"> 
-                        </div>
-                    </li>
-                    <li class="mercaderia__itemLista">
-                        <div class="mercaderia__contenedorItem d-flex justify-content-center align-items-center">
-                            <!-- Categoría SEÑUELOS -->
-                            <img src="./imagenes/señuelo.svg" alt="seccion señuelos" class="mercaderia__iconos"/>
-                        </div>
-                    </li>
-                    <li class="mercaderia__itemLista">
-                        <div class="mercaderia__contenedorItem d-flex justify-content-center align-items-center">
-                            <!-- Categoría INDUMENTARIA -->
-                            <img src="./imagenes/indumentaria.svg" alt="seccion indumentaria" class="mercaderia__iconos">
-                        </div>
-                    </li>
-                    <li class="mercaderia__itemLista">
-                        <div class="mercaderia__contenedorItem d-flex justify-content-center align-items-center">
-                            <!-- Categoría CAMPING -->
-                            <img src="./imagenes/camping.svg" alt="seccion camping" class="mercaderia__iconos">
-                        </div>
-                    </li>
-                    <li class="mercaderia__itemLista">
-                        <div class="mercaderia__contenedorItem d-flex justify-content-center align-items-center">
-                            <!-- Categoría CUCHILLERÍA -->
-                            <img src="./imagenes/cuchillo2.svg" alt="seccion cuchilleria" class="mercaderia__iconos"/>
-                        </div>
-                    </li>
-                    <li class="mercaderia__itemLista">
-                        <div class="mercaderia__contenedorItem d-flex justify-content-center align-items-center">
-                            <!-- Categoría VARIADO -->
-                            <img src="./imagenes/variado.svg" alt="seccion variados" class="mercaderia__iconos"/>
-                        </div>
-                    </li>
-                </ul>
+        <article class="container mercaderia pt-5">
+            <div class="row mercaderia__titulos text-light">
+                <!-- TITULO Y SUBTITULO -->
+                <h1 class="col-12 titulo mercaderia__h1 text-center">ARTICULOS DE PESCA Y CAMPING</h1>
+                <h3 class="col-12 titulo mercaderia__h3 text-center">Conocé lo que vendemos</h3>
             </div>
+            
+            <!-- ICONOS DE CATEGORÍAS LINKEABLES-->
+            <ul class="row mercaderia__lista list-unstyled mt-5">
+                <li class="col-4 mercaderia__itemLista d-flex justify-content-center bg-dark">
+                    <!-- Categoría PESCA -->
+                    <div class="categoria__contenedor d-flex align-items-center">
+                        <img src="./imagenes/pesca.svg" alt="seccion pesca" class="mercaderia__iconos">
+                    </div>
+                </li>
+                <li class="col-4 mercaderia__itemLista d-flex justify-content-center bg-dark">                    
+                    <!-- Categoría SEÑUELOS -->
+                    <div class="d-flex align-items-center">
+                        <img src="./imagenes/señuelo.svg" alt="seccion señuelos" class="mercaderia__iconos"/>
+                    </div>
+                </li>
+                <li class="col-4 mercaderia__itemLista d-flex justify-content-center bg-dark">
+                    <!-- Categoría INDUMENTARIA -->
+                    <div class="d-flex align-items-center">
+                        <img src="./imagenes/indumentaria.svg" alt="seccion señuelos" class="mercaderia__iconos"/>
+                    </div>
+                </li>
+                <li class="col-4 mercaderia__itemLista d-flex justify-content-center bg-dark">
+                    <!-- Categoría CAMPING -->
+                    <div class="d-flex align-items-center">
+                        <img src="./imagenes/camping.svg" alt="seccion señuelos" class="mercaderia__iconos"/>
+                    </div>
+                </li>
+                <li class="col-4 mercaderia__itemLista d-flex justify-content-center bg-dark">
+                    <!-- Categoría CUCHILLERÍA -->
+                    <div class="d-flex align-items-center">
+                        <img src="./imagenes/cuchillo2.svg" alt="seccion señuelos" class="mercaderia__iconos"/>
+                    </div>
+                </li>
+                <li class="col-4 mercaderia__itemLista d-flex justify-content-center bg-dark">
+                    <!-- Categoría VARIADO -->
+                    <div class="d-flex align-items-center">
+                        <img src="./imagenes/variado.svg" alt="seccion señuelos" class="mercaderia__iconos"/>
+                    </div>
+                </li>
+            </ul>
         </article>
     
         <!-- SECCIÓN DONDE ESTAMOS -->
