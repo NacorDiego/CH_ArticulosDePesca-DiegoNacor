@@ -45,6 +45,8 @@ body {
     color: #fff;
 }
 
+/* ------- INDEX ------- */
+
 /* MAIN */
 
 /* Portada */
@@ -69,8 +71,8 @@ body {
 }
 
 .mercaderia__iconos {    
-    width: 240px;
-    height: 240px;
+    width: 200px;
+    height: 200px;
 }
 
 /* Ubicación */
@@ -80,8 +82,37 @@ body {
     font-weight: 600;
 }
 
+/* ------ QUIENES SOMOS ------- */
+
+.titulo__secciones {
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.quienes__h3 {
+    font-size: 2.7rem;
+    font-weight: 500;
+}
+
+.quienes__texto {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.quienes__h5 {
+    font-size: 1.7rem;
+}
+
 /* FOOTER */
+
+.footer__copyr {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
 
 .footer__link {
     text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
 }
+

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -10,154 +11,105 @@
     <title>Quienes somos</title>
     <!-- link para utilizar íconos de FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../estilos/normalize.css">
-    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="stylesheet" href="../estilos/estilos_bootstrap.css">
 </head>
 <body>
 
-    <div class="contenedorHeader">
-        <header>
-            <nav class="nav">
-                <!-- LOGO -->
-                <a href="../index.html" class="nav__logo">
-                    <img class="nav__imgLogo" src="../imagenes/logo2.svg" alt="Logo">
-                </a>
-                
-                <!-- BARRA DE NAVEGACIÓN -->
-                <ul class="nav__lista">
-                    <div class="lista__contenedor">
-                        <li class="nav__itemLista itemLista">
-                            <a href="#">Pesca</a>
+    <header>
+        <nav class="header__nav navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="nav__logo" src="../imagenes/logo2.svg" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="nav__contenedor collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <ul class="nav__list d-flex justify-content-between m-0">
+                        <li class="nav-item">
+                            <a class="nav__link" href="#">Quienes somos</a>
                         </li>
-                        <li class="nav__itemLista itemLista">
-                            <a href="#">Señuelos</a>
+                        <li class="nav-item">
+                            <a class="nav__link" href="./preguntasFrecuentes.html">Preguntas frecuentes</a>
                         </li>
-                        <li class="nav__itemLista itemLista">
-                            <a href="#">Camping</a>
+                        <li class="nav-item">
+                            <a class="nav__link" href="./blog.html">Blog</a>                            
                         </li>
-                    </div>
-                    <div class="lista__contenedor">
-                        <li class="nav__itemLista itemLista">
-                            <a href="#">Indumentaria</a>
+                        <li class="nav-item">
+                            <a class="nav__link" href="./contacto.html">Contacto</a>
                         </li>
-                        <li class="nav__itemLista itemLista">
-                            <a href="#">Cuchilleria</a>
-                        </li>
-                        <li class="nav__itemLista itemLista">
-                            <a href="#">Otros</a>
-                        </li>
-                    </div>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="nav__input form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="nav__boton btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Artículo de la página -->
+    <article class="container quienes mt-5">
+        <h2 class="titulo titulo__secciones text-center">QUIENES SOMOS</h2>
+
+        <div class="row quienes__secciones mt-5">
+            <!-- SECCIÓN NUESTRO NEGOCIO -->
+            <section class="col-md-6 quienes__seccion quienes__seccion--negocio">
+                <h3 class="titulo quienes__h3">Nuestro negocio</h3>
+                <p class="quienes__texto mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt iusto atque sint quasi ab voluptatum ipsum officia, facere consectetur reiciendis veritatis accusantium sapiente quidem tempore, voluptates fuga consequatur eaque accusamus error. Quibusdam corrupti cumque impedit praesentium quisquam. Quo hic perferendis non debitis eligendi, natus nihil voluptates accusamus ab ex dolorem praesentium pariatur impedit consequuntur a eveniet eaque earum, adipisci voluptate ducimus nobis illo? Similique, tempora, labore dolorem pariatur praesentium ducimus exercitationem nam temporibus hic doloribus itaque saepe suscipit aspernatur! Corrupti tempore illum ad quae veritatis libero minus, modi, dolorum sapiente provident assumenda obcaecati vitae placeat aspernatur voluptates maiores amet. Doloremque molestias, itaque, inventore facere quam quia, ipsam exercitationem non doloribus labore voluptatem possimus aut iste dolore eos porro rerum deserunt alias officia. Modi natus deserunt iusto facere debitis, cumque numquam! Ad, accusamus beatae! Velit itaque tenetur nesciunt. Id, totam eligendi aperiam, fugit, dicta eos molestias architecto ab corrupti obcaecati commodi?</p>                
+            </section>
+    
+            <!-- SECCIÓN PERSONAL -->
+            <section class="col-md-5 offset-md-1 quienes__seccion quienes__seccion--personal">
+                <h3 class="titulo quienes__h3">Personal</h3>
+                <ul class="quienes__lista list-unstyled mt-4">
+                    <li class="quienes__itemLista">
+                        <!-- HUGO ESPINOLA -->
+                        <h5 class="quienes__h5"><i class="fas fa-user-alt"></i> Hugo Espinola</h5>
+                        <p class="quienes__texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo maxime error fugit tenetur explicabo? Enim quam rem maiores optio impedit nostrum tenetur ipsa reiciendis commodi iste, doloribus et aliquam hic!</p>
+                    </li>
+                    <li class="quienes__itemLista">
+                        <!-- ROBERTO BURNIS -->
+                        <h5 class="quienes__h5"><i class="fas fa-user-alt"></i> Roberto Burnis</h5>
+                        <p class="quienes__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eligendi minima debitis recusandae id impedit. Aliquid fugit quasi, eum cum debitis suscipit ad fuga magnam?</p>
+                    </li>
+                    <li class="quienes__itemLista">
+                        <!-- ESTER RODRÍGUEZ -->
+                        <h5 class="quienes__h5"><i class="fas fa-user-alt"></i> Ester Rodríguez</h5>
+                        <p class="quienes__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi omnis veniam atque rerum nemo quaerat incidunt ullam asperiores. Assumenda at cumque itaque culpa? Magnam quaerat asperiores debitis.</pclass=texto>
+                    </li>
                 </ul>
-                        
-                <!-- BUSQUEDA -->
-                <form action="" class="header__form">
-                    <fieldset>
-                        <input type="search" class="header__input-busqueda" placeholder=" Buscar...">
-                        <button type="submit" class="header__boton-busqueda">
-                            <i class="fas fa-search boton__icono"></i>
-                        </button>
-                    </fieldset>
-                </form>
-            </nav>
-        </header>
-    </div>
+            </section>
+        </div>
+    </article>
 
-    <div class="contenedor">
-        <!-- Artículo de la página -->
-        <article class="quienes">
-            <h2 class="titulo titulo__secciones tracking-in-contract">QUIENES SOMOS</h2>
-    
-            <div class="quienes__secciones">
-                <!-- SECCIÓN NUESTRO NEGOCIO -->
-                <section class="quienes__seccion quienes__seccion--negocio tracking-in-expand">
-                    <h3 class="titulo quienes__h3">Nuestro negocio</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt iusto atque sint quasi ab voluptatum ipsum officia, facere consectetur reiciendis veritatis accusantium sapiente quidem tempore, voluptates fuga consequatur eaque accusamus error. Quibusdam corrupti cumque impedit praesentium quisquam. Quo hic perferendis non debitis eligendi, natus nihil voluptates accusamus ab ex dolorem praesentium pariatur impedit consequuntur a eveniet eaque earum, adipisci voluptate ducimus nobis illo? Similique, tempora, labore dolorem pariatur praesentium ducimus exercitationem nam temporibus hic doloribus itaque saepe suscipit aspernatur! Corrupti tempore illum ad quae veritatis libero minus, modi, dolorum sapiente provident assumenda obcaecati vitae placeat aspernatur voluptates maiores amet. Doloremque molestias, itaque, inventore facere quam quia, ipsam exercitationem non doloribus labore voluptatem possimus aut iste dolore eos porro rerum deserunt alias officia. Modi natus deserunt iusto facere debitis, cumque numquam! Ad, accusamus beatae! Velit itaque tenetur nesciunt. Id, totam eligendi aperiam, fugit, dicta eos molestias architecto ab corrupti obcaecati commodi?</p>                
-                </section>
+    <div class="container-fluid mt-5">
+        <footer class="d-flex flex-wrap justify-content-around align-items-center py-3 my-4 border-top">
+            <div class="col-md-2 d-flex align-items-center">
+                <span class="footer__copyr text-muted">© 2022 por NDiego</span>
+            </div>
+
+            <ul class="nav col-md-6 justify-content-evenly align-items-center">
+                <li>
+                    <a class="footer__link text-muted" href="./secciones/quienesSomos.html">Quienes somos</a>
+                </li>
+                <li>
+                    <a class="footer__link text-muted" href="./secciones/preguntasFrecuentes.html">Preguntas frecuentes</a>
+                </li>
+                <li>
+                    <a class="footer__link text-muted" href="./secciones/blog.html">Blog</a>
+                </li>
+                <li>
+                    <a class="footer__link text-muted" href="./secciones/contacto.html">Contacto</a>
+                </li>
+            </ul>
         
-                <!-- SECCIÓN PERSONAL -->
-                <section class="quienes__seccion quienes__seccion--personal tracking-in-expand">
-                    <h3 class="titulo quienes__h3">Personal</h3>
-                    <ul class="quienes__lista">
-                        <li class="quienes__itemLista">
-                            <!-- HUGO ESPINOLA -->
-                            <h5 class="quienes__h5"><i class="fas fa-user-alt"></i> Hugo Espinola</h5>
-                            <p class="quienes__p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo maxime error fugit tenetur explicabo? Enim quam rem maiores optio impedit nostrum tenetur ipsa reiciendis commodi iste, doloribus et aliquam hic!</p>
-                        </li>
-                        <li class="quienes__itemLista">
-                            <!-- ROBERTO BURNIS -->
-                            <h5 class="quienes__h5"><i class="fas fa-user-alt"></i> Roberto Burnis</h5>
-                            <p class="quienes__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eligendi minima debitis recusandae id impedit. Aliquid fugit quasi, eum cum debitis suscipit ad fuga magnam?</p>
-                        </li>
-                        <li class="quienes__itemLista">
-                            <!-- ESTER RODRÍGUEZ -->
-                            <h5 class="quienes__h5"><i class="fas fa-user-alt"></i> Ester Rodríguez</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi omnis veniam atque rerum nemo quaerat incidunt ullam asperiores. Assumenda at cumque itaque culpa? Magnam quaerat asperiores debitis.</p>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-        </article>
-    </div>
-
-    <div class="contenedorFooter">
-        <!-- FOOTER -->
-        <footer class="footer">
-            <div class="footer__arriba">
-                <!-- Redes sociales -->
-                <div class="footer__contenedor footer__contenedor--redes">
-                    <ul class="footer__lista">
-                        <li class="footer__texto footer__itemLista--redes itemLista">
-                            <span class="footer__encabezado">Seguinos en nuestras redes:</span>
-                            <a href="https://es-la.facebook.com/" target="_blank" class="icono-facebook">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                            <a href="https://www.instagram.com/?hl=es-la" target="_blank">
-                                <i class="fab fa-instagram-square"></i>
-                            </a>
-                        </li>
-                        <li class="footer__texto footer__itemLista--whatsapp itemLista">
-                            <!-- WHATSAPP -->
-                            <span class="footer__texto footer__encabezado">Hablanos por Whatsapp: </span>
-                            <i class="fab fa-whatsapp-square"></i>
-                        </li>
-                        <li class="footer__texto footer__itemLista itemLista">
-                            <!-- Teléfono fijo -->
-                            <span class="footer__encabezado">Llamanos por teléfono:</span>
-                            <i class="fas fa-phone-square"></i>
-                        </li>
-                    </ul>
-                </div>
-    
-                <!-- Horarios de atención -->
-                <div class="footer__contenedor footer__contenedor--horarios">                
-                    <p class="footer__texto footer__encabezado--horarios"><i class="fas fa-clock"></i> Horarios de atención:</p>                
-                    <span class="footer__texto">Lunes a Sábados de 9:00 a 12:30 y de 16:00 a 20:00</span>
-                </div>
-                
-                <div class="footer__contenedor footer__contenedor--secciones">
-                    <!-- LINKS FOOTER -->
-                    <ul class="footer__lista footer__lista--secciones">
-                        <li class="footer__texto footer__itemLista footer__itemLista--secciones itemLista">
-                            <a href="#">Quienes somos</a>
-                        </li>
-                        <li class="footer__texto footer__itemLista footer__itemLista--secciones itemLista">
-                            <a href="./preguntasFrecuentes.html">Preguntas frecuentes</a>
-                        </li>
-                        <li class="footer__texto footer__itemLista footer__itemLista--secciones itemLista">
-                            <a href="./blog.html">Blog</a>
-                        </li>
-                        <li class="footer__texto footer__itemLista footer__itemLista--secciones itemLista">
-                            <a href="./contacto.html">Contacto</a>                    
-                        </li>
-                    </ul>        
-                </div>
-            </div>
-    
-            <div class="footer__contenedor--copyright">
-                <span class="footer__copyright">Copyright 2022 © by NDiego</span>
-            </div>
+            <ul class="nav col-md-2 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-2x fa-whatsapp"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-2x fa-instagram"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-2x fa-facebook"></i></a></li>
+            </ul>
         </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
