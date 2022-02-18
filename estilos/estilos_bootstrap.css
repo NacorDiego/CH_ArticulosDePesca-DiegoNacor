@@ -4,11 +4,18 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* NAVBAR */
+
 .nav__logo {
     width: 150px;
 }
 
 .header__nav {
+    background-color: rgb(39, 93, 173, 0.9);
 }
 
 .nav__list {
@@ -17,5 +24,64 @@
 }
 
 .nav__link {
+    text-decoration: none;
+    color: rgb(255, 255, 255,0.7);
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.nav__link:hover {
+    color: rgb(255, 255, 255);
+}
+
+.nav__boton {
+    border-color: #FE9021;
+    color: #FE9021;
+}
+
+.nav__boton:hover {
+    border-color: #FE9021;
+    background-color: #FE9021;
+    color: #fff;
+}
+
+/* MAIN */
+
+/* Portada */
+
+.portada__img {
+    height: 80vh;
+    object-fit: cover;
+}
+
+/* Mercaderia */
+
+.mercaderia__contenedor {
+    width: 80%;
+    margin: auto;
+}
+
+.mercaderia__lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap:50px;
+}
+
+.mercaderia__iconos {    
+    width: 240px;
+    height: 240px;
+}
+
+/* Ubicación */
+
+.ubicacion__titulo {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+/* FOOTER */
+
+.footer__link {
     text-decoration: none;
 }

@@ -16,7 +16,7 @@
 <body>
     
     <header>
-        <nav class="header__nav navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="header__nav navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img class="nav__logo" src="./imagenes/logo2.svg" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +30,7 @@
                         <li class="nav-item">
                             <a class="nav__link" href="#">Preguntas frecuentes</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item">
                             <a class="nav__link" href="#">Blog</a>                            
                         </li>
                         <li class="nav-item">
@@ -38,18 +38,18 @@
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <input class="nav__input form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="nav__boton btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
     
-    <main>
+    <main class="container-fluid">
         <!-- SECCIÓN DE PORTADA -->
-        <article class="container-fluid portada p-0">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <article class="row portada">
+            <div id="carouselExampleIndicators" class="carousel slide p-0" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -57,13 +57,13 @@
                 </div>
                 <div class="container-fluid carousel-inner p-0">
                     <div class="carousel-item active">
-                        <img src="./imagenes/portada.jpg" class="d-block w-100" alt="imagen de portada">
+                        <img src="./imagenes/portada.jpg" class="d-block w-100 portada__img" alt="imagen de portada">
                     </div>
                     <div class="carousel-item">
-                        <img src="./imagenes/portada2.jpg" class="d-block w-100" alt="imagen de portada">
+                        <img src="./imagenes/portada2.jpg" class="d-block w-100 portada__img" alt="imagen de portada">
                     </div>
                     <div class="carousel-item">
-                        <img src="./imagenes/portada3.jpg" class="d-block w-100" alt="...">
+                        <img src="./imagenes/portada3.jpg" class="d-block w-100 portada__img" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -78,52 +78,54 @@
         </article>
     
         <!-- SECCIÓN DE ARTICULOS QUE VENDEMOS-->
-        <article class="container mercaderia mt-5 bg-light">
-            <div class="row mercaderia__titulos text-center">
-                <!-- TITULO Y SUBTITULO -->
-                <h1 class="titulo mercaderia__h1">ARTICULOS DE PESCA Y CAMPING</h1>
-                <h3 class="titulo mercaderia__h3">Conocé lo que vendemos</h3>
+        <article class="row mercaderia pt-5 bg-dark">
+            <div class="mercaderia__contenedor">
+                <div class="mercaderia__titulos text-light text-center">
+                    <!-- TITULO Y SUBTITULO -->
+                    <h1 class="titulo mercaderia__h1">ARTICULOS DE PESCA Y CAMPING</h1>
+                    <h3 class="titulo mercaderia__h3">Conocé lo que vendemos</h3>
+                </div>
+                
+                <!-- ICONOS DE CATEGORÍAS LINKEABLES-->
+                <ul class="mercaderia__lista list-unstyled mt-5">
+                    <li class="mercaderia__itemLista">
+                        <div class="mercaderia__contenedorItem d-flex justify-content-center align-items-center">
+                            <!-- Categoría PESCA -->
+                            <img src="./imagenes/pesca.svg" alt="seccion pesca" class="mercaderia__iconos"> 
+                        </div>
+                    </li>
+                    <li class="mercaderia__itemLista">
+                        <div class="mercaderia__contenedorItem d-flex justify-content-center align-items-center">
+                            <!-- Categoría SEÑUELOS -->
+                            <img src="./imagenes/señuelo.svg" alt="seccion señuelos" class="mercaderia__iconos"/>
+                        </div>
+                    </li>
+                    <li class="mercaderia__itemLista">
+                        <div class="mercaderia__contenedorItem d-flex justify-content-center align-items-center">
+                            <!-- Categoría INDUMENTARIA -->
+                            <img src="./imagenes/indumentaria.svg" alt="seccion indumentaria" class="mercaderia__iconos">
+                        </div>
+                    </li>
+                    <li class="mercaderia__itemLista">
+                        <div class="mercaderia__contenedorItem d-flex justify-content-center align-items-center">
+                            <!-- Categoría CAMPING -->
+                            <img src="./imagenes/camping.svg" alt="seccion camping" class="mercaderia__iconos">
+                        </div>
+                    </li>
+                    <li class="mercaderia__itemLista">
+                        <div class="mercaderia__contenedorItem d-flex justify-content-center align-items-center">
+                            <!-- Categoría CUCHILLERÍA -->
+                            <img src="./imagenes/cuchillo2.svg" alt="seccion cuchilleria" class="mercaderia__iconos"/>
+                        </div>
+                    </li>
+                    <li class="mercaderia__itemLista">
+                        <div class="mercaderia__contenedorItem d-flex justify-content-center align-items-center">
+                            <!-- Categoría VARIADO -->
+                            <img src="./imagenes/variado.svg" alt="seccion variados" class="mercaderia__iconos"/>
+                        </div>
+                    </li>
+                </ul>
             </div>
-    
-            <!-- ICONOS DE CATEGORÍAS LINKEABLES-->
-            <ul class="row mercaderia__lista mt-5">
-                <li class="col-md-4  mercaderia__itemLista">
-                    <div class="mercaderia__contenedorItem rotate-center scale-up-center">
-                        <!-- Categoría PESCA -->
-                        <img src="./imagenes/pesca.svg" alt="seccion pesca" class="mercaderia__iconos"> 
-                    </div>
-                </li>
-                <li class="col-md-4 mercaderia__itemLista">
-                    <div class="mercaderia__contenedorItem rotate-center scale-up-center">
-                        <!-- Categoría SEÑUELOS -->
-                        <img src="./imagenes/señuelo.svg" alt="seccion señuelos" class="mercaderia__iconos"/>
-                    </div>
-                </li>
-                <li class="col-md-4 mercaderia__itemLista">
-                    <div class="mercaderia__contenedorItem rotate-center scale-up-center">
-                        <!-- Categoría INDUMENTARIA -->
-                        <img src="./imagenes/indumentaria.svg" alt="seccion indumentaria" class="mercaderia__iconos">
-                    </div>
-                </li>
-                <li class="col-md-4 mercaderia__itemLista">
-                    <div class="mercaderia__contenedorItem rotate-center scale-up-center">
-                        <!-- Categoría CAMPING -->
-                        <img src="./imagenes/camping.svg" alt="seccion camping" class="mercaderia__iconos">
-                    </div>
-                </li>
-                <li class="col-md-4 mercaderia__itemLista">
-                    <div class="mercaderia__contenedorItem rotate-center scale-up-center">
-                        <!-- Categoría CUCHILLERÍA -->
-                        <img src="./imagenes/cuchillo2.svg" alt="seccion cuchilleria" class="mercaderia__iconos"/>
-                    </div>
-                </li>
-                <li class="col-md-4 mercaderia__itemLista">
-                    <div class="mercaderia__contenedorItem rotate-center scale-up-center">
-                        <!-- Categoría VARIADO -->
-                        <img src="./imagenes/variado.svg" alt="seccion variados" class="mercaderia__iconos"/>
-                    </div>
-                </li>
-            </ul>
         </article>
     
         <!-- SECCIÓN DONDE ESTAMOS -->
@@ -136,65 +138,35 @@
         </article>
     </main>
 
-    <div class="contenedorFooter">
-        <!-- FOOTER -->
-        <footer class="footer">
-            <div class="footer__arriba">
-                <!-- Redes sociales -->
-                <div class="footer__contenedor footer__contenedor--redes">
-                    <ul class="footer__lista">
-                        <li class="footer__texto footer__itemLista--redes itemLista">
-                            <span class="footer__encabezado">Seguinos en nuestras redes:</span>
-                            <a href="https://es-la.facebook.com/" target="_blank" class="icono-facebook">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                            <a href="https://www.instagram.com/?hl=es-la" target="_blank">
-                                <i class="fab fa-instagram-square"></i>
-                            </a>
-                        </li>
-                        <li class="footer__texto footer__itemLista--whatsapp itemLista">
-                            <!-- WHATSAPP -->
-                            <span class="footer__texto footer__encabezado">Hablanos por Whatsapp: </span>
-                            <i class="fab fa-whatsapp-square"></i>
-                        </li>
-                        <li class="footer__texto footer__itemLista itemLista">
-                            <!-- Teléfono fijo -->
-                            <span class="footer__encabezado">Llamanos por teléfono:</span>
-                            <i class="fas fa-phone-square"></i>
-                        </li>
-                    </ul>
-                </div>
-    
-                <!-- Horarios de atención -->
-                <div class="footer__contenedor footer__contenedor--horarios">                
-                    <p class="footer__texto footer__encabezado--horarios"><i class="fas fa-clock"></i> Horarios de atención:</p>                
-                    <span class="footer__texto">Lunes a Sábados de 9:00 a 12:30 y de 16:00 a 20:00</span>
-                </div>
-                
-                <div class="footer__contenedor footer__contenedor--secciones">
-                    <!-- LINKS FOOTER -->
-                    <ul class="footer__lista footer__lista--secciones">
-                        <li class="footer__texto footer__itemLista footer__itemLista--secciones itemLista">
-                            <a href="./secciones/quienesSomos.html">Quienes somos</a>
-                        </li>
-                        <li class="footer__texto footer__itemLista footer__itemLista--secciones itemLista">
-                            <a href="./secciones/preguntasFrecuentes.html">Preguntas frecuentes</a>
-                        </li>
-                        <li class="footer__texto footer__itemLista footer__itemLista--secciones itemLista">
-                            <a href="./secciones/blog.html">Blog</a>
-                        </li>
-                        <li class="footer__texto footer__itemLista footer__itemLista--secciones itemLista">
-                            <a href="./secciones/contacto.html">Contacto</a>                    
-                        </li>
-                    </ul>        
-                </div>
+    <div class="container mt-5">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-2 d-flex align-items-center">
+                <span class="text-muted">© 2022 por NDiego</span>
             </div>
-    
-            <div class="footer__contenedor--copyright">
-                <span class="footer__copyright">Copyright 2022 © by NDiego</span>
-            </div>
+
+            <ul class="nav col-md-6 justify-content-around align-items-center">
+                <li>
+                    <a class="footer__link text-muted" href="./secciones/quienesSomos.html">Quienes somos</a>
+                </li>
+                <li>
+                    <a class="footer__link text-muted" href="./secciones/preguntasFrecuentes.html">Preguntas frecuentes</a>
+                </li>
+                <li>
+                    <a class="footer__link text-muted" href="./secciones/blog.html">Blog</a>
+                </li>
+                <li>
+                    <a class="footer__link text-muted" href="./secciones/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        
+            <ul class="nav col-md-2 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-2x fa-whatsapp"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-2x fa-instagram"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-2x fa-facebook"></i></a></li>
+            </ul>
         </footer>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
