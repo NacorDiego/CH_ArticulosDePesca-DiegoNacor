@@ -58,6 +58,19 @@ body {
 
 /* Mercaderia */
 
+/* .mercaderia__titulos {
+    color: #252525;
+} */
+
+.mercaderia__h1 {
+    color: #252525;
+    font-size: 3.5rem;
+}
+
+.mercaderia__h3 {
+    color: #252525;
+    font-size: 2.5rem;
+}
 
 .mercaderia__contenedor {
     width: 80%;
@@ -71,11 +84,6 @@ body {
 .mercaderia__itemLista {
     border-radius: 50%;
 }
-
-/* .categoria__contenedor {
-    width: 80%;
-    height: 80%;
-} */
 
 .mercaderia__iconos {    
     width: 200px;
