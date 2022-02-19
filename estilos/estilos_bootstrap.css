@@ -376,9 +376,20 @@ body {
 
 /* Secciones */
 
+.blog__texto {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.blog__h3 {
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+
 .blog__img {
     width: 100%;
-}  
+    border-radius: 25px;
+}
 
 /* FOOTER */
 
