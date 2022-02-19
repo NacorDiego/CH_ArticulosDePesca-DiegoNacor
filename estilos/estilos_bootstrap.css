@@ -376,19 +376,39 @@ body {
 
 /* Secciones */
 
+.blog__seccion {
+    border-radius: 25px;
+    background-color: rgb(39, 93, 173, 0.8);
+}
+
 .blog__texto {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 300;
 }
 
+.blog__texto2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
 .blog__h3 {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     font-weight: 400;
 }
 
 .blog__img {
     width: 100%;
     border-radius: 25px;
+}
+
+.blog__boton {
+    font-size: 1.3rem;
+}
+
+.boton_ver-mas {
+    font-size: 1.4rem;
+    background-color: #FE9021;
+    color: #fff;
 }
 
 /* FOOTER */
