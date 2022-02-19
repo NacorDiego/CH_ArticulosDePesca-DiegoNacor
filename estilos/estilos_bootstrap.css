@@ -371,7 +371,14 @@ body {
       opacity: 1;
     }
 }
-  
+
+/* BLOG */
+
+/* Secciones */
+
+.blog__img {
+    width: 100%;
+}  
 
 /* FOOTER */
 
