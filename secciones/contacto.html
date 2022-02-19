@@ -21,7 +21,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="nav__contenedor collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <div class="nav__contenedor collapse navbar-collapse justify-content-between mx-5" id="navbarSupportedContent">
                     <ul class="nav__list d-flex justify-content-between m-0">
                         <li class="nav-item">
                             <a class="nav__link" href="./quienesSomos.html">Quienes somos</a>
@@ -37,7 +37,7 @@
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <input class="nav__input form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <input class="nav__input form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                         <button class="nav__boton btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
                 </div>
@@ -45,8 +45,7 @@
         </nav>
     </header>
 
-    <div class="contenedor">
-        <!-- Artículo de la página -->
+    <!-- <div class="contenedor">
         <article class="contacto">
             <h2 class="titulo titulo__secciones titulo__secciones--contacto">Escribinos</h2>
             <form class="contacto__form" action="">
@@ -69,33 +68,56 @@
                 <input class="contacto__boton" type="submit" value="Enviar">
             </form>
         </article>
-    </div>
+    </div> -->
+
+    <main class="container main contacto">
+        <h2 class="seccion__titulo text-center">Formulario de contacto</h2>
+        <p class="contacto__texto text-center mt-4">En este formulario usted debe escribir lo que quiera consultarnos y, a la brevedad, le será respondido a su casilla de correo.</p>
+        <div class="formulario__cont mt-5">
+            <div class="mb-3">
+                <label for="form-nombre-apellido" class="form-label">Nombre y apellido</label>
+                <input type="text" class="form-control contacto__input" id="form-nombre-apellido" placeholder="Nombre y apellido">
+            </div>
+            <div class="mb-3">
+                <label for="form-email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control contacto__input" id="form-email" placeholder="nombre@ejemplo.com">
+            </div>
+            <div class="mb-3">
+                <label for="form-asunto" class="form-label">Asunto</label>
+                <input type="email" class="form-control contacto__input" id="form-asunto" placeholder="¿Por qué nos escribe?">
+            </div>
+            <div class="mb-3">
+                <label for="form-texto" class="form-label">Área de texto</label>
+                <textarea class="form-control contacto__input" id="form-texto" rows="5" placeholder="Escriba lo que desee"></textarea>
+            </div>
+        </div>
+    </main>
 
     <div class="footer__contenedor container-fluid mt-5">
-        <footer class="d-flex flex-wrap justify-content-around align-items-center py-3 my-4 border-top">
+        <footer class="d-flex flex-wrap justify-content-around align-items-center py-3 mt-4 border-top border-2">
             <div class="col-md-2 d-flex align-items-center">
-                <span class="footer__copyr text-muted">© 2022 por NDiego</span>
+                <span class="footer__copyr text-light">© 2022 por NDiego</span>
             </div>
 
             <ul class="nav col-md-6 justify-content-evenly align-items-center">
                 <li>
-                    <a class="footer__link text-muted" href="./quienesSomos.html">Quienes somos</a>
+                    <a class="footer__link text-light" href="./quienesSomos.html">Quienes somos</a>
                 </li>
                 <li>
-                    <a class="footer__link text-muted" href="./preguntasFrecuentes.html">Preguntas frecuentes</a>
+                    <a class="footer__link text-light" href="./preguntasFrecuentes.html">Preguntas frecuentes</a>
                 </li>
                 <li>
-                    <a class="footer__link text-muted" href="./blog.html">Blog</a>
+                    <a class="footer__link text-light" href="./blog.html">Blog</a>
                 </li>
                 <li>
-                    <a class="footer__link text-muted" href="#">Contacto</a>
+                    <a class="footer__link text-light" href="#">Contacto</a>
                 </li>
             </ul>
         
             <ul class="nav col-md-2 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-2x fa-whatsapp"></i></a></li>
-                <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-2x fa-instagram"></i></a></li>
-                <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-2x fa-facebook"></i></a></li>
+                <li class="ms-3"><a class="text-light" href="#"><i class="fa-brands fa-2x fa-whatsapp"></i></a></li>
+                <li class="ms-3"><a class="text-light" href="#"><i class="fa-brands fa-2x fa-instagram"></i></a></li>
+                <li class="ms-3"><a class="text-light" href="#"><i class="fa-brands fa-2x fa-facebook"></i></a></li>
             </ul>
         </footer>
     </div>

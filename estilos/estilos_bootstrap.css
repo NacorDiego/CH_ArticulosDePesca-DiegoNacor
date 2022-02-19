@@ -6,42 +6,50 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    /* background: rgb(121,1,255);
+    background: linear-gradient(45deg, rgba(121,1,255,1) 20%, rgba(0,175,255,1) 100%); */
+    background: rgb(32,205,166);
+background: linear-gradient(45deg, rgba(32,205,166,1) 20%, rgba(0,78,194,1) 100%);
 }
 
 /* NAVBAR */
 
 .nav__logo {
-    width: 150px;
+    width: 240px;
 }
 
 .header__nav {
-    background-color: rgb(39, 93, 173, 0.85);
+    /* background-color: rgb(39, 93, 173, 0.95); */
+    background-color: rgb(255, 255, 255, 0.3);
 }
 
 .nav__list {
-    width: 500px;
+    width: 650px;
     list-style: none;
 }
 
 .nav__link {
     text-decoration: none;
-    color: rgb(255, 255, 255,0.7);
-    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
     font-weight: 300;
 }
 
 .nav__link:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 78, 194);
+    font-weight: 400;
 }
 
 .nav__boton {
-    border-color: #FE9021;
-    color: #FE9021;
+    border-color: #12e3b4;
+    color: #12e3b4;
+    /* border-color: #FE9021;
+    color: #FE9021; */
 }
 
 .nav__boton:hover {
-    border-color: #FE9021;
-    background-color: #FE9021;
+    border-color: #12e3b4;
+    background-color: #12e3b4;
     color: #fff;
 }
 
@@ -204,7 +212,7 @@ body {
 /* Main */
 
 .main {
-    margin-top: 140px;
+    margin-top: 180px;
     min-height: 100vh;
 }
 
@@ -411,15 +419,58 @@ body {
     color: #fff;
 }
 
+/* CONTACTO */
+
+/* Main */
+
+.contacto {
+    min-height: 120vh;
+}
+
+.seccion__titulo {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.contacto__texto {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+.formulario__cont {
+    border: 2px #fff solid;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255,0.2);
+    padding: 50px;
+}
+
+.form-label {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.contacto__input {
+    padding: 15px;
+    padding-left: 25px;
+    font-size: 1.3rem;
+}
+
 /* FOOTER */
 
+.footer__contenedor {
+    background: rgba(0,78,194,0.3);
+}
+
 .footer__copyr {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: 400;
 }
 
 .footer__link {
     text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 400;
+    font-size: 1.4rem;
+    font-weight: 300;
 }
