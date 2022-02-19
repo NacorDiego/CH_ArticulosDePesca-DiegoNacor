@@ -15,7 +15,7 @@ body {
 }
 
 .header__nav {
-    background-color: rgb(39, 93, 173, 0.9);
+    background-color: rgb(39, 93, 173, 0.85);
 }
 
 .nav__list {
@@ -52,7 +52,7 @@ body {
 /* Portada */
 
 .portada__img {
-    height: 80vh;
+    height: 100vh;
     object-fit: cover;
 }
 
@@ -99,6 +99,11 @@ body {
 
 /* ------ QUIENES SOMOS ------- */
 
+.quienes {
+    margin-top: 140px;
+    min-height: 100vh;
+}
+
 .titulo__secciones {
     font-size: 3.5rem;
     font-weight: 500;
@@ -130,4 +135,80 @@ body {
     font-size: 1.1rem;
     font-weight: 400;
 }
+
+/* Animaciones QS */
+
+/* Titulo principal */
+
+.tracking-in-contract-bck {
+	-webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px);
+              transform: translateZ(400px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+}
+@keyframes tracking-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px);
+              transform: translateZ(400px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+}
+
+/* Secciones */
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+  
+  
 
