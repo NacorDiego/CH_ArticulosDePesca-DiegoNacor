@@ -107,28 +107,27 @@ background: linear-gradient(45deg, rgba(32,205,166,1) 20%, rgba(0,78,194,1) 100%
 
 /* ------ QUIENES SOMOS ------- */
 
-.quienes {
-    margin-top: 140px;
-    min-height: 100vh;
-}
-
-.titulo__secciones {
-    font-size: 3.5rem;
-    font-weight: 500;
+.quienes__cont-sect {
+    background-color: rgb(255, 255, 255, 0.3);
+    border-radius: 25px;
 }
 
 .quienes__h3 {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     font-weight: 500;
+    color: #fff;
 }
 
 .quienes__texto {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 300;
+    color: #fff;
 }
 
 .quienes__h5 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 400;
 }
 
 
@@ -213,7 +212,7 @@ background: linear-gradient(45deg, rgba(32,205,166,1) 20%, rgba(0,78,194,1) 100%
 
 .main {
     margin-top: 180px;
-    min-height: 100vh;
+    min-height: 120vh;
 }
 
 .preguntas__lista {
