@@ -70,32 +70,24 @@ background: linear-gradient(45deg, rgba(32,205,166,1) 20%, rgba(0,78,194,1) 100%
     color: #252525;
 } */
 
-.mercaderia__h1 {
-    color: #252525;
-    font-size: 3.5rem;
-}
-
-.mercaderia__h3 {
-    color: #252525;
-    font-size: 2.5rem;
-}
-
-.mercaderia__contenedor {
-    width: 80%;
-    margin: auto;
+.mercaderia {
+    min-height: 100vh;
 }
 
 .mercaderia__lista {
-    height: 90vh;
+    min-height: 30vh;
 }
 
-.mercaderia__itemLista {
-    border-radius: 50%;
+.mercaderia__cont-img {
+    background-color: rgb(255, 255, 255, 0.3);
+    border-color: #fff;
+    border-radius: 25px;
+    width: 80%;
+    height: 80%;
 }
 
-.mercaderia__iconos {    
-    width: 200px;
-    height: 200px;
+.mercaderia__img {
+    object-fit: scale-down;
 }
 
 /* Ubicación */
