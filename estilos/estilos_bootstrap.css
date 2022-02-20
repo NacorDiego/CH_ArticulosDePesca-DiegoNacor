@@ -92,9 +92,19 @@ background: linear-gradient(45deg, rgba(32,205,166,1) 20%, rgba(0,78,194,1) 100%
 
 /* Ubicación */
 
+.ubicacion {
+    min-height: 110vh;
+}
+
 .ubicacion__titulo {
     font-size: 3rem;
     font-weight: 600;
+}
+
+.ubicacion__mapa {
+    border-radius: 25px;
+    width: 90%;
+    height: 70vh;
 }
 
 /* ------ QUIENES SOMOS ------- */
@@ -379,7 +389,7 @@ background: linear-gradient(45deg, rgba(32,205,166,1) 20%, rgba(0,78,194,1) 100%
 
 /* Animaciones BLOG */
 
-.shadow-drop-2-center:hover {
+.shadow-drop-2-center {
 	-webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
