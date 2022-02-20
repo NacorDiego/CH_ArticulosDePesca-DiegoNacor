@@ -130,6 +130,144 @@ background: linear-gradient(45deg, rgba(32,205,166,1) 20%, rgba(0,78,194,1) 100%
     font-weight: 400;
 }
 
+/* PREGUNTAS FRECUENTES */
+
+/* Main */
+
+.main {
+    margin-top: 180px;
+    min-height: 120vh;
+}
+
+.preguntas__lista {
+    height: 100vh;
+}
+
+.preguntas__contItem {
+    width: 90%;
+    height: 90%;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.preguntas__h5 {
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.preguntas__texto {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+/* BLOG */
+
+/* Secciones */
+
+.blog__seccion {
+    border-color: #fff;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255, 0.3);
+    /* background-color: rgb(39, 93, 173, 0.8); */
+}
+
+.blog__texto {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.blog__h3 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.blog__img {
+    width: 100%;
+    border-color: #fff;
+    border-radius: 25px;
+}
+
+.blog__boton {
+    padding: 15px;
+    font-size: 1.3rem;
+    background-color: rgba(0,78,194,0.8);
+    color: #fff;
+}
+
+.blog__boton:hover {
+    background-color: rgb(0,78,194);
+}
+
+.boton_ver-mas {
+    padding: 15px 20px;
+    font-size: 1.4rem;
+    background-color: rgba(0,78,194,0.8);
+    color: #fff;
+}
+
+.boton_ver-mas:hover {
+    color: #fff;
+    background-color: rgb(0,78,194);
+}  
+
+/* CONTACTO */
+
+/* Main */
+
+.contacto {
+    min-height: 120vh;
+}
+
+.seccion__titulo {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.seccion__subtitulo {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+.formulario__cont {
+    border: 2px #fff solid;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255,0.2);
+    padding: 50px;
+}
+
+.form-label {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.contacto__input {
+    padding: 15px;
+    padding-left: 25px;
+    font-size: 1.3rem;
+}
+
+/* FOOTER */
+
+.footer__contenedor {
+    background: rgba(0,78,194,0.3);
+}
+
+.footer__copyr {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.footer__link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+/* ANIMACIONES */
 
 /* Animaciones QS */
 
@@ -203,38 +341,6 @@ background: linear-gradient(45deg, rgba(32,205,166,1) 20%, rgba(0,78,194,1) 100%
     100% {
         opacity: 1;
     }
-}
-
-
-/* PREGUNTAS FRECUENTES */
-
-/* Main */
-
-.main {
-    margin-top: 180px;
-    min-height: 120vh;
-}
-
-.preguntas__lista {
-    height: 100vh;
-}
-
-.preguntas__contItem {
-    width: 90%;
-    height: 90%;
-    border-radius: 25px;
-    background-color: rgb(255, 255, 255, 0.3);
-}
-
-.preguntas__h5 {
-    font-size: 1.6rem;
-    color: #fff;
-}
-
-.preguntas__texto {
-    font-size: 1.2rem;
-    font-weight: 300;
-    color: #fff;
 }
 
 /* Animaciones PF */
@@ -392,107 +498,38 @@ background: linear-gradient(45deg, rgba(32,205,166,1) 20%, rgba(0,78,194,1) 100%
     }
 }
 
-/* BLOG */
+/* Animaciones BLOG */
 
-/* Secciones */
-
-.blog__seccion {
-    border-color: #fff;
-    border-radius: 25px;
-    background-color: rgb(255, 255, 255, 0.3);
-    /* background-color: rgb(39, 93, 173, 0.8); */
+.shadow-drop-2-center:hover {
+	-webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.blog__texto {
-    font-size: 1.5rem;
-    font-weight: 300;
+@-webkit-keyframes shadow-drop-2-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px);
+              transform: translateZ(50px);
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
 }
-
-.blog__texto2 {
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-.blog__h3 {
-    font-size: 2.5rem;
-    font-weight: 400;
-}
-
-.blog__img {
-    width: 100%;
-    border-color: #fff;
-    border-radius: 25px;
-}
-
-.blog__boton {
-    padding: 15px;
-    font-size: 1.4rem;
-}
-
-.boton_ver-mas {
-    padding: 15px 20px;
-    font-size: 1.4rem;
-    background-color: rgba(0,78,194,0.8);
-    color: #fff;
-}
-
-.boton_ver-mas:hover {
-    color: #fff;
-    background-color: rgb(0,78,194);
-}
-
-/* CONTACTO */
-
-/* Main */
-
-.contacto {
-    min-height: 120vh;
-}
-
-.seccion__titulo {
-    font-size: 4rem;
-    font-weight: 700;
-    color: #fff;
-}
-
-.seccion__subtitulo {
-    font-size: 1.6rem;
-    font-weight: 300;
-    color: #fff;
-}
-
-.formulario__cont {
-    border: 2px #fff solid;
-    border-radius: 20px;
-    background-color: rgb(255, 255, 255,0.2);
-    padding: 50px;
-}
-
-.form-label {
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: #fff;
-}
-
-.contacto__input {
-    padding: 15px;
-    padding-left: 25px;
-    font-size: 1.3rem;
-}
-
-/* FOOTER */
-
-.footer__contenedor {
-    background: rgba(0,78,194,0.3);
-}
-
-.footer__copyr {
-    font-size: 1.4rem;
-    font-weight: 400;
-}
-
-.footer__link {
-    text-decoration: none;
-    font-size: 1.4rem;
-    font-weight: 300;
+@keyframes shadow-drop-2-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px);
+              transform: translateZ(50px);
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
 }
