@@ -385,8 +385,10 @@ background: linear-gradient(45deg, rgba(32,205,166,1) 20%, rgba(0,78,194,1) 100%
 /* Secciones */
 
 .blog__seccion {
+    border-color: #fff;
     border-radius: 25px;
-    background-color: rgb(39, 93, 173, 0.8);
+    background-color: rgb(255, 255, 255, 0.3);
+    /* background-color: rgb(39, 93, 173, 0.8); */
 }
 
 .blog__texto {
@@ -406,6 +408,7 @@ background: linear-gradient(45deg, rgba(32,205,166,1) 20%, rgba(0,78,194,1) 100%
 
 .blog__img {
     width: 100%;
+    border-color: #fff;
     border-radius: 25px;
 }
 
@@ -433,8 +436,8 @@ background: linear-gradient(45deg, rgba(32,205,166,1) 20%, rgba(0,78,194,1) 100%
     color: #fff;
 }
 
-.contacto__texto {
-    font-size: 1.8rem;
+.seccion__subtitulo {
+    font-size: 1.6rem;
     font-weight: 300;
     color: #fff;
 }
