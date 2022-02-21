@@ -3,11 +3,22 @@
 /* INDEX */
 @media screen and (max-width: 424px) {
     
+    /* HEADER */
+
+    .main {
+        margin-top: 400px;
+    }
     
 }
 
 @media screen and (min-width: 425px) {
     
+    /* HEADER */
+
+    .main {
+        margin-top: 350px;
+    }
+
     /* PREGUNTAS */
     
     .mercaderia__lista__item {
@@ -19,6 +30,12 @@
 
 @media screen and (min-width: 768px) {
 
+    /* HEADER */
+
+    .main {
+        margin-top: 250px;
+    }
+    
     /* PREGUNTAS */
     
     .mercaderia__lista__item {
@@ -30,6 +47,11 @@
 
 @media screen and (min-width: 1200px) {
 
+    /* HEADER */
+
+    .navegacion__contenedor__lista {
+        min-width: 650px;
+    }
     
 }
 
