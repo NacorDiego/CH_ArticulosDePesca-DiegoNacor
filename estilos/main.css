@@ -42,29 +42,29 @@ body {
   width: 240px;
 }
 
-.navegacion__list {
+.navegacion__contenedor__lista {
   width: 650px;
   list-style: none;
 }
 
-.navegacion__link {
+.navegacion__contenedor__lista__link {
   text-decoration: none;
   color: white;
   font-size: 1.5rem;
   font-weight: 400;
 }
 
-.navegacion__link:hover {
+.navegacion__contenedor__lista__link:hover {
   color: #12e3b4;
   font-weight: 500;
 }
 
-.navegacion__boton {
+.navegacion__contenedor__busqueda__boton {
   border-color: #12e3b4;
   color: #12e3b4;
 }
 
-.navegacion__boton:hover {
+.navegacion__contenedor__busqueda__boton:hover {
   border-color: #12e3b4;
   background-color: #12e3b4;
   color: #fff;
@@ -145,14 +145,14 @@ body {
 /* PREGUNTAS FRECUENTES */
 /* Main */
 .preguntas__lista {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .preguntas__lista__contItem {
   width: 90%;
   height: 90%;
   border-radius: 25px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .preguntas__lista__contItem__h5 {
