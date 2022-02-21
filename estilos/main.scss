@@ -6,22 +6,20 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    /* background: rgb(121,1,255);
-    background: linear-gradient(45deg, rgba(121,1,255,1) 20%, rgba(0,175,255,1) 100%); */
     background: rgb(32,205,166);
-background: linear-gradient(45deg, rgba(32,205,166,1) 20%, rgba(0,78,194,1) 100%);
+    background: linear-gradient(45deg, rgba(32,205,166,1) 20%, rgba(0,78,194,1) 100%);
 }
 
 /* NAVBAR */
+
+.header__nav {
+    background-color: rgba(0, 78, 194, 0.5);
+}
 
 .nav__logo {
     width: 240px;
 }
 
-.header__nav {
-    /* background-color: rgb(39, 93, 173, 0.95); */
-    background-color: rgba(0, 78, 194, 0.5);
-}
 
 .nav__list {
     width: 650px;
@@ -43,8 +41,6 @@ background: linear-gradient(45deg, rgba(32,205,166,1) 20%, rgba(0,78,194,1) 100%
 .nav__boton {
     border-color: #12e3b4;
     color: #12e3b4;
-    /* border-color: #FE9021;
-    color: #FE9021; */
 }
 
 .nav__boton:hover {
@@ -66,51 +62,49 @@ background: linear-gradient(45deg, rgba(32,205,166,1) 20%, rgba(0,78,194,1) 100%
 
 /* Mercaderia */
 
-/* .mercaderia__titulos {
-    color: #252525;
-} */
-
 .mercaderia {
     min-height: 100vh;
+    
+    &__lista {
+        min-height: 30vh;
+    }
+    &__cont-img {
+        background-color: rgba(255, 255, 255, 0.3);
+        border-color: #fff;
+        border-radius: 25px;
+        width: 80%;
+        height: 80%;
+    }
+    
+    &__img {
+        object-fit: scale-down;
+    }
 }
 
-.mercaderia__lista {
-    min-height: 30vh;
-}
 
-.mercaderia__cont-img {
-    background-color: rgb(255, 255, 255, 0.3);
-    border-color: #fff;
-    border-radius: 25px;
-    width: 80%;
-    height: 80%;
-}
-
-.mercaderia__img {
-    object-fit: scale-down;
-}
 
 /* Ubicación */
 
 .ubicacion {
     min-height: 110vh;
+    
+    &__titulo {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    
+    &__mapa {
+        border-radius: 25px;
+        width: 90%;
+        height: 70vh;
+    }
 }
 
-.ubicacion__titulo {
-    font-size: 3rem;
-    font-weight: 600;
-}
-
-.ubicacion__mapa {
-    border-radius: 25px;
-    width: 90%;
-    height: 70vh;
-}
 
 /* ------ QUIENES SOMOS ------- */
 
 .quienes__cont-sect {
-    background-color: rgb(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
     border-radius: 25px;
 }
 
@@ -132,6 +126,7 @@ background: linear-gradient(45deg, rgba(32,205,166,1) 20%, rgba(0,78,194,1) 100%
     font-weight: 400;
 }
 
+
 /* PREGUNTAS FRECUENTES */
 
 /* Main */
@@ -149,7 +144,7 @@ background: linear-gradient(45deg, rgba(32,205,166,1) 20%, rgba(0,78,194,1) 100%
     width: 90%;
     height: 90%;
     border-radius: 25px;
-    background-color: rgb(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .preguntas__h5 {
@@ -163,6 +158,7 @@ background: linear-gradient(45deg, rgba(32,205,166,1) 20%, rgba(0,78,194,1) 100%
     color: #fff;
 }
 
+
 /* BLOG */
 
 /* Secciones */
@@ -170,8 +166,7 @@ background: linear-gradient(45deg, rgba(32,205,166,1) 20%, rgba(0,78,194,1) 100%
 .blog__seccion {
     border-color: #fff;
     border-radius: 25px;
-    background-color: rgb(255, 255, 255, 0.3);
-    /* background-color: rgb(39, 93, 173, 0.8); */
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .blog__texto {
@@ -211,7 +206,8 @@ background: linear-gradient(45deg, rgba(32,205,166,1) 20%, rgba(0,78,194,1) 100%
 .boton_ver-mas:hover {
     color: #fff;
     background-color: rgb(0,78,194);
-}  
+}
+
 
 /* CONTACTO */
 
@@ -219,6 +215,19 @@ background: linear-gradient(45deg, rgba(32,205,166,1) 20%, rgba(0,78,194,1) 100%
 
 .contacto {
     min-height: 120vh;
+    
+    &__form {
+        border: 2px #fff solid;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255,0.2);
+        padding: 50px;
+    }
+    
+    &__input {
+        padding: 15px;
+        padding-left: 25px;
+        font-size: 1.3rem;
+    }
 }
 
 .seccion__titulo {
@@ -233,24 +242,12 @@ background: linear-gradient(45deg, rgba(32,205,166,1) 20%, rgba(0,78,194,1) 100%
     color: #fff;
 }
 
-.formulario__cont {
-    border: 2px #fff solid;
-    border-radius: 20px;
-    background-color: rgb(255, 255, 255,0.2);
-    padding: 50px;
-}
-
 .form-label {
     font-size: 1.6rem;
     font-weight: 400;
     color: #fff;
 }
 
-.contacto__input {
-    padding: 15px;
-    padding-left: 25px;
-    font-size: 1.3rem;
-}
 
 /* FOOTER */
 
@@ -268,6 +265,7 @@ background: linear-gradient(45deg, rgba(32,205,166,1) 20%, rgba(0,78,194,1) 100%
     font-size: 1.4rem;
     font-weight: 300;
 }
+
 
 /* ANIMACIONES */
 
@@ -422,4 +420,3 @@ background: linear-gradient(45deg, rgba(32,205,166,1) 20%, rgba(0,78,194,1) 100%
               box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
     }
 }
-  
