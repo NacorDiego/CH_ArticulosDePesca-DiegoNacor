@@ -117,27 +117,33 @@ body {
 
 /* quienessomos.html */
 /* ------ QUIENES SOMOS ------- */
-.quienes__cont-sect {
+.quienes__secciones__contSeccion {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 25px;
 }
 
-.quienes__h3 {
+.quienes__secciones__contSeccion__h3 {
   font-size: 2.5rem;
   font-weight: 500;
   color: #fff;
 }
 
-.quienes__texto {
+.quienes__secciones__contSeccion__texto {
   font-size: 1.2rem;
   font-weight: 300;
   color: #fff;
 }
 
-.quienes__h5 {
+.quienes__secciones__contSeccion__lista__itemLista__h5 {
   font-size: 1.6rem;
   color: #fff;
   font-weight: 400;
+}
+
+.quienes__secciones__contSeccion__lista__itemLista__texto {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #fff;
 }
 
 /* preguntasfrecuentes.html */
