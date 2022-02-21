@@ -1,0 +1,24 @@
+/* CONTACTO */
+
+.contacto {
+    min-height: 120vh;
+    
+    &__form {
+        border: 2px #fff solid;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255,0.2);
+        padding: 50px;
+    }
+    
+    &__input {
+        padding: 15px;
+        padding-left: 25px;
+        font-size: 1.3rem;
+    }
+}
+
+.form-label {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #fff;
+}

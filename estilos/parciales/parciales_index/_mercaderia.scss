@@ -1,0 +1,20 @@
+/* Mercaderia */
+
+.mercaderia {
+    min-height: 100vh;
+    
+    &__lista {
+        min-height: 30vh;
+    }
+    &__cont-img {
+        background-color: rgba(255, 255, 255, 0.3);
+        border-color: #fff;
+        border-radius: 25px;
+        width: 80%;
+        height: 80%;
+    }
+    
+    &__img {
+        object-fit: scale-down;
+    }
+}

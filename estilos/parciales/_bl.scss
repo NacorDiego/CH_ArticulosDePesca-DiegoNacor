@@ -1,0 +1,48 @@
+/* BLOG */
+
+/* Secciones */
+
+.blog__seccion {
+    border-color: #fff;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.blog__texto {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.blog__h3 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.blog__img {
+    width: 100%;
+    border-color: #fff;
+    border-radius: 25px;
+}
+
+.blog__boton {
+    padding: 15px;
+    font-size: 1.3rem;
+    background-color: rgba(0,78,194,0.8);
+    color: #fff;
+}
+
+.blog__boton:hover {
+    background-color: rgb(0,78,194);
+}
+
+.boton_ver-mas {
+    padding: 15px 20px;
+    font-size: 1.4rem;
+    background-color: rgba(0,78,194,0.8);
+    color: #fff;
+}
+
+.boton_ver-mas:hover {
+    color: #fff;
+    background-color: rgb(0,78,194);
+}

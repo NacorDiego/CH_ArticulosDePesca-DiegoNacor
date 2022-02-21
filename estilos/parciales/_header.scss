@@ -1,0 +1,39 @@
+/* NAVBAR */
+
+.navegacion {
+    
+    background-color: rgba(0, 78, 194, 0.5);
+    
+    &__logo {
+        width: 240px;
+    }
+    
+    
+    &__list {
+        width: 650px;
+        list-style: none;
+    }
+    
+    &__link {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    
+    &__link:hover {
+        color: rgb(18, 227, 180);
+        font-weight: 500;
+    }
+    
+    &__boton {
+        border-color: #12e3b4;
+        color: #12e3b4;
+    }
+    
+    &__boton:hover {
+        border-color: #12e3b4;
+        background-color: #12e3b4;
+        color: #fff;
+    }
+}

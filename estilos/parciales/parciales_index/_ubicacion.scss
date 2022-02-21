@@ -1,0 +1,16 @@
+/* Ubicación */
+
+.ubicacion {
+    min-height: 110vh;
+    
+    &__titulo {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    
+    &__mapa {
+        border-radius: 25px;
+        width: 90%;
+        height: 70vh;
+    }
+}

@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: rgb(32,205,166);
+    background: linear-gradient(45deg, rgba(32,205,166,1) 20%, rgba(0,78,194,1) 100%);
+}
+
+/* Main general */
+
+.main {
+    margin-top: 180px;
+    min-height: 120vh;
+}
+
+/* Titulo y subtitulo de las secciones */
+
+.seccion__titulo {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.seccion__subtitulo {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #fff;
+}
