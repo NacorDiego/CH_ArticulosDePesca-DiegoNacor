@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Componentes generales */
 * {
   margin: 0;
   padding: 0;
@@ -31,6 +32,7 @@ body {
   color: #fff;
 }
 
+/* Header */
 /* NAVBAR */
 .navegacion {
   background-color: rgba(0, 78, 194, 0.5);
@@ -68,6 +70,7 @@ body {
   color: #fff;
 }
 
+/* index.html */
 /* Portada */
 .portada__img {
   height: 100vh;
@@ -84,7 +87,7 @@ body {
   min-height: 30vh;
 }
 
-.mercaderia__cont-img {
+.mercaderia__lista__item__contImg {
   background-color: rgba(255, 255, 255, 0.3);
   border-color: #fff;
   border-radius: 25px;
@@ -92,7 +95,7 @@ body {
   height: 80%;
 }
 
-.mercaderia__img {
+.mercaderia__lista__item__contImg__img {
   -o-object-fit: scale-down;
      object-fit: scale-down;
 }
@@ -113,6 +116,7 @@ body {
   height: 70vh;
 }
 
+/* quienessomos.html */
 /* ------ QUIENES SOMOS ------- */
 .quienes__cont-sect {
   background-color: rgba(255, 255, 255, 0.3);
@@ -137,6 +141,7 @@ body {
   font-weight: 400;
 }
 
+/* preguntasfrecuentes.html */
 /* PREGUNTAS FRECUENTES */
 /* Main */
 .preguntas__lista {
@@ -161,58 +166,56 @@ body {
   color: #fff;
 }
 
+/* blog.html */
 /* BLOG */
 /* Secciones */
 .blog__seccion {
   border-color: #fff;
   border-radius: 25px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-.blog__texto {
-  font-size: 1.3rem;
-  font-weight: 300;
-}
-
-.blog__h3 {
-  font-size: 2rem;
-  font-weight: 400;
-}
-
-.blog__img {
+.blog__seccion__contImg__img {
   width: 100%;
   border-color: #fff;
   border-radius: 25px;
 }
 
-.blog__boton {
+.blog__seccion__contTexto__h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.blog__seccion__contTexto__texto {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.blog__seccion__contTexto__boton {
   padding: 15px;
   font-size: 1.3rem;
-  background-color: rgba(0, 78, 194, 0.8);
+  background-color: rgba(0, 78, 194, 0.7);
   color: #fff;
 }
 
-.blog__boton:hover {
+.blog__seccion__contTexto__boton:hover {
   background-color: #004ec2;
 }
 
-.boton_ver-mas {
+.blog__verMas {
   padding: 15px 20px;
   font-size: 1.4rem;
-  background-color: rgba(0, 78, 194, 0.8);
+  background-color: rgba(0, 78, 194, 0.7);
   color: #fff;
 }
 
-.boton_ver-mas:hover {
+.blog__verMas:hover {
   color: #fff;
   background-color: #004ec2;
 }
 
+/* contacto.html */
 /* CONTACTO */
-.contacto {
-  min-height: 120vh;
-}
-
 .contacto__form {
   border: 2px #fff solid;
   border-radius: 20px;
@@ -220,10 +223,22 @@ body {
   padding: 50px;
 }
 
-.contacto__input {
+.contacto__form__input {
   padding: 15px;
   padding-left: 25px;
   font-size: 1.3rem;
+}
+
+.contacto__form__boton {
+  background-color: rgba(0, 78, 194, 0.7);
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.contacto__form__boton:hover {
+  background-color: #004ec2;
+  color: #fff;
 }
 
 .form-label {
@@ -232,6 +247,7 @@ body {
   color: #fff;
 }
 
+/* Footer */
 /* FOOTER */
 .footer__contenedor {
   background: rgba(0, 78, 194, 0.3);
@@ -248,6 +264,7 @@ body {
   font-weight: 300;
 }
 
+/* Animaciones */
 /* ANIMACIONES */
 /* Titulo principal */
 .tracking-in-contract-bck {
@@ -398,6 +415,22 @@ body {
   }
 }
 
+/* Media qerys */
 /* MEDIA QERYS */
 /* INDEX */
+@media screen and (min-width: 425px) {
+  /* PREGUNTAS */
+  .mercaderia__lista__item {
+    height: 450px;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* PREGUNTAS */
+  .mercaderia__lista__item {
+    height: 350px;
+    width: 350px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

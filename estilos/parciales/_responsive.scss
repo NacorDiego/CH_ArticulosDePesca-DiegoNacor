@@ -1,7 +1,40 @@
 /* MEDIA QERYS */
 
 /* INDEX */
-
-@media screen {
+@media screen and (max-width: 424px) {
+    
     
 }
+
+@media screen and (min-width: 425px) {
+    
+    /* PREGUNTAS */
+    
+    .mercaderia__lista__item {
+        height: 450px;
+        width: 450px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    /* PREGUNTAS */
+    
+    .mercaderia__lista__item {
+        height: 350px;
+        width: 350px;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+
+    
+}
+
+  
+
+
+
+
