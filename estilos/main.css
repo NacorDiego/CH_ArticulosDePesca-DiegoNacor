@@ -1,4 +1,24 @@
 @charset "UTF-8";
+/* mapas */
+/* MAPAS */
+.blanco {
+  color: white;
+}
+
+.azul {
+  color: #004ec2;
+}
+
+.verde {
+  color: #12e3b4;
+}
+
+.negro {
+  color: #191919;
+}
+
+/* mixins */
+/* Se utiliza en _qs.scss */
 /* Componentes generales */
 * {
   margin: 0;
@@ -116,6 +136,7 @@ body {
 }
 
 /* quienessomos.html */
+/* Se utiliza en _qs.scss */
 /* ------ QUIENES SOMOS ------- */
 .quienes__secciones__contSeccion {
   background-color: rgba(255, 255, 255, 0.3);

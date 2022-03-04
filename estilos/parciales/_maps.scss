@@ -1,0 +1,14 @@
+/* MAPAS */
+
+$colores: (
+    "blanco":white,
+    "azul":rgb(0, 78, 194),
+    "verde":rgb(18, 227, 180),
+    "negro":rgb(25,25,25)
+);
+
+@each $nombre, $color in $colores {
+    .#{$nombre}{
+        color: $color;
+    }
+}

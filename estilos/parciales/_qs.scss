@@ -1,3 +1,5 @@
+@import "./mixin";
+
 /* ------ QUIENES SOMOS ------- */
 .quienes {
 
@@ -13,9 +15,7 @@
                 color: #fff;
             }
             &__texto {
-                font-size: 1.2rem;
-                font-weight: 300;
-                color: #fff;
+                @include texto-parrafo;
             }
             &__lista {
 
@@ -27,9 +27,7 @@
                         font-weight: 400;
                     }
                     &__texto {
-                        font-size: 1.2rem;
-                        font-weight: 300;
-                        color: #fff;
+                        @include texto-parrafo;
                     }
                 }
             }
