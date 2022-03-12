@@ -36,6 +36,10 @@
             }
             &__boton:hover {
                 background-color: $color-boton-hover;
+                color: #fff;
+            }
+            &__boton:active {
+                color: #fff;
             }
         }
     }

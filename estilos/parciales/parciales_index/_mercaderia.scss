@@ -19,6 +19,10 @@
                     object-fit: scale-down;
                 }
             }
+            &__contImg:hover {
+                width: 90%;
+                height: 90%;
+            }
         }
     }
 }

@@ -119,6 +119,11 @@ body {
      object-fit: scale-down;
 }
 
+.mercaderia__lista__item__contImg:hover {
+  width: 90%;
+  height: 90%;
+}
+
 /* Ubicación */
 .ubicacion {
   min-height: 110vh;
@@ -226,6 +231,11 @@ body {
 
 .blog__seccion__contTexto__boton:hover {
   background-color: #004ec2;
+  color: #fff;
+}
+
+.blog__seccion__contTexto__boton:active {
+  color: #fff;
 }
 
 .blog__verMas {
