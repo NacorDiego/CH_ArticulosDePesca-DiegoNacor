@@ -56,23 +56,27 @@
             <p class="col-md-10 seccion__subtitulo text-center mt-4">En este formulario usted debe escribir lo que quiera consultarnos y, a la brevedad, le será respondido a su casilla de correo.</p>
         </div>
         <div class="row contacto__form mt-5 justify-content-center shadow-drop-2-center">
-            <div class="mb-3">
-                <label for="form-nombre-apellido" class="form-label">Nombre y apellido</label>
-                <input type="text" class="form-control contacto__form__input" id="form-nombre-apellido" placeholder="Nombre y apellido">
-            </div>
-            <div class="mb-3">
-                <label for="form-email" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control contacto__form__input" id="form-email" placeholder="nombre@ejemplo.com">
-            </div>
-            <div class="mb-3">
-                <label for="form-asunto" class="form-label">Asunto</label>
-                <input type="email" class="form-control contacto__form__input" id="form-asunto" placeholder="¿Por qué nos escribe?">
-            </div>
-            <div class="mb-3">
-                <label for="form-texto" class="form-label">Área de texto</label>
-                <textarea class="form-control contacto__form__input" id="form-texto" rows="5" placeholder="Escriba lo que desee"></textarea>
-            </div>
-            <button type="submit" class="contacto__form__boton col-6 btn mt-4">Enviar</button>
+            <form>
+                <div class="mb-3">
+                    <label for="form-nombre-apellido" class="form-label">Nombre y apellido</label>
+                    <input type="text" class="form-control contacto__form__input" id="form-nombre-apellido" placeholder="Nombre y apellido" required>
+                </div>
+                <div class="mb-3">
+                    <label for="form-email" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control contacto__form__input" id="form-email" placeholder="nombre@ejemplo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="form-asunto" class="form-label">Asunto</label>
+                    <input type="text" class="form-control contacto__form__input" id="form-asunto" placeholder="¿Por qué nos escribe?" required>
+                </div>
+                <div class="mb-3">
+                    <label for="form-texto" class="form-label">Área de texto</label>
+                    <textarea class="form-control contacto__form__input" id="form-texto" rows="5" placeholder="Escriba lo que desee" required></textarea>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="contacto__form__boton col-6 btn mt-4">Enviar</button>
+                </div>
+            </form>
         </div>
     </main>
 
